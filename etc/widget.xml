@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+
+        
+        	<widget id="Testimonials" class="Test\Testimonials\Block\Widget\Testimonials">
+		<label translate="true">Testimonials Widget</label>
+		<description> Testimonials Module Widget</description>
+		<parameters>
+                                                      <parameter name="quantity" xsi:type="select" visible="true" sort_order="70" >
+                                                                         <label>Quantity of testimonials per slide</label>
+                                                     <options>
+                                                                        <option name="1" value="1" selected="true">
+                                                                                    <label>1</label>
+                                                                        </option>
+                                                                        <option name="2" value="2">
+                                                                                    <label>2</label>
+                                                                        </option>
+                                                                        <option name="3" value="3">
+                                                                                    <label>3</label>
+                                                                        </option>
+                                                    </options>
+                                                       </parameter>
+                                    </parameters>
+	</widget>
+        
+</widgets>

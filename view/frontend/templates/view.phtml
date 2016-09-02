@@ -1,0 +1,14 @@
+<?php
+/** @var $block \Test\Testimonials\Block\PostView */
+/** @var $post \Test\Testimonials\Model\Post */
+$post = $block->getPost();
+?>
+<h1 class="testimonials-post-item-title"><?php echo $post->getName() ?></h1>
+
+<div class="testimonials-post-item-content">
+    <?php echo $post->getText(); ?>
+</div>
+
+<div class="testimonials-post-item-meta">
+    <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreationTime() ?>
+</div>

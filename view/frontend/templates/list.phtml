@@ -1,0 +1,19 @@
+<?php /** @var $block \Test\Testimonials\Block\PostList */ ?>
+<h1><?php echo __('Testimonials') ?></h1>
+<ul class="testimonials-post-list">
+    <?php /** @var $post \Test\Testimonials\Model\Post */ ?>
+    <?php foreach ($block->getPosts() as $post): ?>
+        <li class="testimonials-post-list-item">
+            <h3 class="testimonials-post-item-title">
+                <a href="<?php echo '/testimonials/' ?><?php echo $post->getUrlKey() ?>"><?php echo $post->getName()?></a>
+            </h3>
+            <div class="testimonials-post-item-content">
+                <?php echo $post->getText(); ?>
+            </div>
+
+            <div class="testimonials-post-item-meta">
+                <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreationTime() ?>
+            </div>
+        </li>
+    <?php endforeach; ?>
+</ul>

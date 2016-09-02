@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Test_Testimonials::testimonials_content" title="Testimonials" module="Test_Testimonials" sortOrder="50" parent="Magento_Backend::content" resource="Test_Testimonials::testimonials_content" />
+        <add id="Test_Testimonials::post" title="Posts" module="Test_Testimonials" sortOrder="0" parent="Test_Testimonials::testimonials_content" action="testimonials/post" resource="Test_Testimonials::post"/>
+    </menu>
+</config>

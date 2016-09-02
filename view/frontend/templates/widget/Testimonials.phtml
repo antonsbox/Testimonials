@@ -1,0 +1,71 @@
+<style type="text/css" media="screen">
+    body { padding-bottom: 5em; }
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    .testimonials-widget {
+        padding: 30px;
+        border-radius: 5px;
+        border: 4px dashed;     
+    }
+    /* DIRECTION CONTROLS (NEXT / PREV) */
+    .bx-wrapper .bx-prev {
+        left: 10px;
+        background: url(<?php echo $this->getViewFileUrl('Test_Testimonials::images/controls.png'); ?>) no-repeat 0 -32px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 10px;
+        background: url(<?php echo $this->getViewFileUrl('Test_Testimonials::images/controls.png'); ?>) no-repeat -43px -32px;
+    }
+    /* LOADER */
+
+    .bx-wrapper .bx-loading {
+        min-height: 50px;
+        background: url(<?php echo $this->getViewFileUrl('Test_Testimonials::images/bx_loader.gif'); ?>) center center no-repeat #fff;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+    }
+</style>
+<link href="<?php echo $this->getViewFileUrl('Test_Testimonials::css/jquery.bxslider.css'); ?>"rel="stylesheet">
+<script type="text/javascript">
+    require(['jquery', 'bxslider'], function ($) {
+        "use strict";
+        // javascript here
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                minSlides: <?php echo $this->getData('quantity') ?>,
+                maxSlides: <?php echo $this->getData('quantity') ?>,
+                slideWidth: 360,
+                slideMargin: 10
+            });
+        });
+    });
+
+</script>
+
+<div class="testimonials-widget">
+    <div class="slidewrap2">
+        <ul class="bxslider">
+            <?php foreach ($block->getPosts() as $post): ?>
+                <li class="slide">	
+                    <h3 class="testimonials-widget-item-name">                        
+                        <?php echo $post->getName() ?> 
+                    </h3>
+                    <h3 class="testimonials-widget-item-photo">                        
+                        <img src="pub/media/<?php echo $post->getPhotoUrl() ?>" />
+                    </h3>
+                    <div class="testimonials-post-item-text">
+                        <?php echo $post->getText(); ?>
+                    </div>
+                    <div class="testimonials-post-item-meta">
+                        <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreationTime() ?>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>
