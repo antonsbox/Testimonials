@@ -144,7 +144,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
     /*
      * Set ID
      * @param int $id
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setId($id) {
@@ -155,7 +155,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
      * Set URL Key
      *
      * @param string $url_key
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setUrlKey($url_key) {
         return $this->setData(self::URL_KEY, $url_key);
@@ -164,7 +164,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
     /*
      * Set Name
      * @param string $name
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setName($name) {
@@ -174,7 +174,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
     /*
      * Set Text
      * @param string|null @Text
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setText($text) {
@@ -184,7 +184,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
     /*
      * Set Photo URL
      * @param string|null
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setPhotoUrl($photo_url) {
@@ -195,7 +195,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
      * Set post active
      *
      * @param int|bool $isActive
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setIsActive($isActive) {
         return $this->setData(self::IS_ACTIVE, $isActive);
@@ -205,7 +205,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
      * Set creation time
      *
      * @param string $creation_time
-     * @return \\test\Testmonials\Api\Data\PostInterface
+     * @return \\Test\Testmonials\Api\Data\PostInterface
      */
     public function setCreationTime($creation_time) {
         return $this->setData(self::CREATION_TIME, $creation_time);
@@ -215,7 +215,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements PostInterfa
      * Set update time
      *
      * @param string $update_time
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setUpdateTime($update_time) {
         return $this->setData(self::UPDATE_TIME, $update_time);

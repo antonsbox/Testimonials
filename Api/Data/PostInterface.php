@@ -73,7 +73,7 @@ interface PostInterface {
     /*
      * Set ID
      * @param int $id
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setId($id);
@@ -82,27 +82,27 @@ interface PostInterface {
      * Set URL Key
      *
      * @param string $url_key
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setUrlKey($url_key);
     /*
      * Set Name
      * @param string $name
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setName($name);
     /*
      * Set Text
      * @param string|null @Text
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setText($text);
     /*
      * Set Photo URL
      * @param string|null
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
 
     public function setPhotoUrl($photo_url);
@@ -111,7 +111,7 @@ interface PostInterface {
      * Set post active
      *
      * @param int|bool $isActive
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setIsActive($isActive);
 
@@ -119,7 +119,7 @@ interface PostInterface {
      * Set creation time
      *
      * @param string $creationTime
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setCreationTime($creationTime);
 
@@ -127,7 +127,7 @@ interface PostInterface {
      * Set update time
      *
      * @param string $updateTime
-     * @return \test\Testmonials\Api\Data\PostInterface
+     * @return \Test\Testmonials\Api\Data\PostInterface
      */
     public function setUpdateTime($updateTime);
 }

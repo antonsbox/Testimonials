@@ -1,19 +1,19 @@
 <?php
-namespace test\testimonials\Model\Post\Source;
+namespace Test\Testimonials\Model\Post\Source;
 
 class IsActive implements \Magento\Framework\Data\OptionSourceInterface
 {
     /**
-     * @var \test\testimonials\Model\Post
+     * @var \Test\testimonials\Model\Post
      */
     protected $post;
 
     /**
      * Constructor
      *
-     * @param \test\testimonials\Model\Post $post
+     * @param \Test\testimonials\Model\Post $post
      */
-    public function __construct(\test\testimonials\Model\Post $post)
+    public function __construct(\Test\Testimonials\Model\Post $post)
     {
         $this->post = $post;
            

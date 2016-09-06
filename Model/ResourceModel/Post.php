@@ -94,7 +94,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb {
      *
      * @param string $field
      * @param mixed $value
-     * @param \test\Testimonials\Model\Post $object
+     * @param \Test\Testimonials\Model\Post $object
      * @return \Zend_Db_Select
      */
     protected function _getLoadSelect($field, $value, $object) {
