@@ -1,5 +1,5 @@
 {
-        "name": "antonsbox/Testimonials",
+        "name": "antonsbox/testimonials",
         "description": "A simple testimonials module.",
         "type": "magento2-module",
         "version": "1.0.1-stable",
