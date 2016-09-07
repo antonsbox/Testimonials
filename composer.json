@@ -2,7 +2,7 @@
         "name": "antonsbox/testimonials",
         "description": "A simple testimonials module.",
         "type": "magento2-module",
-        "version": "1.0.1-stable",
+        "version": "1.0.2-stable",
         "license": [
             "OSL-3.0",
             "AFL-3.0"
